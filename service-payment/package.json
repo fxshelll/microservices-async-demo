@@ -1,0 +1,13 @@
+{
+  "name": "service-payment",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "express": "^4.19.2"
+  }
+}
