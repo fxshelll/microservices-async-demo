@@ -35,7 +35,7 @@ microservices-async-demo/
 - **ServiceOrder**: responsável por criar e listar pedidos (`POST /orders`, `GET /orders`).
 - **ServicePayment**: responsável por processar pagamentos dos pedidos.
 
-## 🔄 Fluxo Assíncrono
+## Fluxo Assíncrono
 1. O cliente cria um pedido via ServiceOrder.
 2. O ServiceOrder publica uma mensagem no RabbitMQ.
 3. O ServicePayment consome a mensagem e processa o pagamento.
@@ -74,7 +74,7 @@ docker compose up --build
 
 
 
-## 🧪 Testes com cURL
+## Testes com cURL
 ```
 curl -X POST http://localhost:3001/orders \
      -H "Content-Type: application/json" \
